@@ -1,1 +1,1 @@
-# Tech_Talks_-Issue_Tracker-
+# Tech_Talks_Issue_Tracker
