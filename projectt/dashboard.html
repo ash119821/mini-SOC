@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Issue Tracker</div>
+    <button class="logout-btn">Logout</button>
+</header>
+
+<main class="container">
+
+    <div class="top-actions">
+        <button class="new-btn">+ New Complaint</button>
+        <div class="filters">
+            <button class="filter">All</button>
+            <button class="filter">Open</button>
+            <button class="filter">In Progress</button>
+            <button class="filter">Resolved</button>
+        </div>
+    </div>
+
+    <div class="complaints-list">
+        <!-- CARD 1 -->
+        <div class="card">
+            <h3>Potholes Near Market Area</h3>
+            <p>Road is broken and causing traffic issues.</p>
+            <span class="status open">Open</span>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <h3>Garbage Not Collected</h3>
+            <p>Garbage is left unattended for 3 days.</p>
+            <span class="status progress">In Progress</span>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <h3>Street Light Not Working</h3>
+            <p>Dark area, safety issue for people at night.</p>
+            <span class="status resolved">Resolved</span>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real Time Notification Demo</title>
+<link rel="stylesheet" href="notification.css" />
+</head>
+<body>
+
+<button class="test-btn" onclick="showNotification('Complaint #102 updated to RESOLVED')">
+    Simulate Notification
+</button>
+
+<!-- Notification container (hidden initially) -->
+<div id="notification-box" class="notification">
+    <span id="notification-text"></span>
+</div>
+
+<script>
+function showNotification(message) {
+    const box = document.getElementById('notification-box');
+    const text = document.getElementById('notification-text');
+
+    text.innerText = message;
+    box.classList.add('show');
+
+    // Hide after 4 seconds
+    setTimeout(() => {
+        box.classList.remove('show');
+    }, 4000);
+}
+</script>
+
+</body>
+</html>
