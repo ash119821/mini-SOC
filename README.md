@@ -1,1 +1,2 @@
-# Mini Security Operations Center System
+# Mini Security Operations Control System
+# Mini Security Operations Control System

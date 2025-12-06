@@ -1,0 +1,44 @@
+/* GENERAL PAGE STYLES */
+body {
+    background: #f6f6f6;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* DEMO BUTTON */
+.test-btn {
+    background: #0474fe;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.test-btn:hover {
+    background: #035ed3;
+}
+
+/* NOTIFICATION BOX */
+.notification {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #0474fe;
+    color: white;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    opacity: 0;
+    transform: translateY(15px);
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+/* WHEN ACTIVE */
+.notification.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+v
